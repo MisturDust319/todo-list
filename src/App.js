@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const Item = props => {
-  return <li><input type="checkbox" /><input type="text" value={props.text}></input></li>
+  return <li><input type="checkbox" /><input type="text" value={props.text}></input><span className="checkmark"></span></li>
 }
 
 Item.propTypes = {
@@ -20,13 +20,13 @@ class List extends React.Component {
     super(props);
 
     this.state = {
-      items: ["item1", "item2"]
+      items: ["item", "item"]
     }
   }
 
   render() {
-    let items = this.state.items.map(value => {
-      return <Item text={value} />;
+    let items = this.state.items.map((value, index) => {
+      return <Item text={value+index} />;
     });
     return (<ul>{items}</ul>);
   }
@@ -35,9 +35,11 @@ class List extends React.Component {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <List />
-      </header>
+      <label class="container">
+        asdf
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
     </div>
   );
 }
