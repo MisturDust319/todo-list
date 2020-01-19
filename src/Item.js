@@ -31,23 +31,4 @@ const mapStateToProps = state => {
   };  
 }
 
-export default connect(mapStateToProps, { editItem } )(Item);
-
-/*
-class List extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      items: ["item", "item"]
-    }
-  }
-
-  render() {
-    let items = this.state.items.map((value, index) => {
-      return <Item text={value+index} />;
-    });
-    return (<ul>{items}</ul>);
-  }
-}
-*/
+export default connect(mapStateToProps, { editItem } )(Item);  
