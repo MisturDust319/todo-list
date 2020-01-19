@@ -5,10 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux';
+import store from './Store';
 
 
 ReactDOM.render(
-	<Provider>
+	<Provider store={store}>
 		<h1>todo list</h1>
 		<App />
 	</Provider>,

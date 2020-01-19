@@ -1,16 +1,14 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
+
 import logo from './logo.svg';
 import './App.css';
+
+import Item from './Components';
 
 function App() {
   return (
     <div className="App">
-      <label class="container">
-        asdf
-        <input type="checkbox" />
-        <span class="checkmark"></span>
-      </label>
+      <Item id={1} />
     </div>
   );
 }

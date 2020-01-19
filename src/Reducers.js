@@ -1,4 +1,4 @@
-import { EDIT_ITEM } from 'Actions';
+import { EDIT_ITEM } from './Actions';
 
 // the initial state for the Items Reducer
 // ids is a list of all ids
@@ -8,7 +8,7 @@ const initialStateItems = {
 	idMap: {}
 }
 
-const itemsReducer function(state = initialStateItems, action) {
+export const itemsReducer = (state = initialStateItems, action) => {
 	switch (action.type) {
 		// if you want to edit an item
 		case EDIT_ITEM:
@@ -20,10 +20,8 @@ const itemsReducer function(state = initialStateItems, action) {
 			return {
 				...state,
 				idMap: {
-					..state.idMap,
-					[id]: {
-						text
-					}
+					...state.idMap,
+					[id]: text
 				}
 			}
 
