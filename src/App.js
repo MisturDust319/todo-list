@@ -3,13 +3,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Item from './Components';
+import Item from './Item';
+import List from './List';
 
 function App() {
   return (
-    <div className="App">
-      <Item id={1} />
-    </div>
+    <Item id={"1"} />
   );
 }
 

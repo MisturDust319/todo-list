@@ -4,11 +4,11 @@ import { EDIT_ITEM } from '../Actions';
 // ids is a list of all ids
 // idMap is a JSON object storing the actual items
 const initialState = {
-	ids: [],
-	idMap: {}
+	ids: ["0"],
+	idMap: { "0" : "" }
 }
 
-export const itemsReducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
 	switch (action.type) {
 		// if you want to edit an item
 		case EDIT_ITEM:

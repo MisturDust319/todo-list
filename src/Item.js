@@ -24,8 +24,10 @@ Item.defaultProps = {
   text: ''
 }
 
-const mapStateToProps = state => {
-  const text = itemTextSelector(state, "1");
+const mapStateToProps = (state, ownProps)  => {
+  // ownProps allows you to grab data from the component props  
+  // here, it's used to grab the Item's id
+  const text = itemTextSelector(state, ownProps.id);
   return {
     text
   };  
