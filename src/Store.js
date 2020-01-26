@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import ListReducer from './reducers/ListReducer';
+import ItemReducer from './reducers/ItemReducer';
 
-export default createStore(ListReducer, 
+export default createStore(ItemReducer, 
 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

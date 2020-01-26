@@ -8,7 +8,7 @@ import List from './List';
 
 function App() {
   return (
-    <Item id={"1"} />
+    <List />
   );
 }
 
