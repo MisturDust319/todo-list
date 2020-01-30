@@ -1,12 +1,9 @@
 import { EDIT_ITEM } from '../Actions';
 
 // the initial state for the Items Reducer
-// ids is a list of all ids
-// idMap is a JSON object storing the actual items
-const initialState = {
-	ids: ["0"],
-	idMap: { "0" : "" }
-}
+// is empty
+// a
+const initialState = {};
 
 export default (state = initialState, action) => {
 	switch (action.type) {
