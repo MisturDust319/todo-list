@@ -30,7 +30,7 @@ const mapStateToProps = (state, ownProps)  => {
   const text = itemTextSelector(state, ownProps.id);
   return {
     text
-  };  
+  };
 }
 
 export default connect(mapStateToProps, { editItem } )(Item);  
