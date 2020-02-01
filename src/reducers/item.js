@@ -1,4 +1,4 @@
-import { EDIT_ITEM } from '../Actions';
+import { EDIT_ITEM } from '../actions';
 
 // the initial state for the Items Reducer
 // is empty
