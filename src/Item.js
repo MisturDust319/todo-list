@@ -3,8 +3,8 @@ import { PropTypes } from 'prop-types';
 // import React-Redux components
 import { connect } from 'react-redux';
 // import App items
-import { editItem } from './Actions';
-import { itemTextSelector } from './Selectors'
+import { editItem } from './actions';
+import { itemTextSelector } from './selectors'
 
 const Item = props => {
   return (<li key={props.id}>

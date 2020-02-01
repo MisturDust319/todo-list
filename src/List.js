@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 
 // selectors
-import { idsSelector } from './Selectors';
+import { idsSelector } from './selectors';
 
 // import App items
 import Item from './Item';
