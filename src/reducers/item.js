@@ -4,7 +4,7 @@ import { EDIT_ITEM } from '../actions';
 // is empty
 // a
 const initialState = {
-	idMap: { '0': '', '1' : '' }
+	idMap: {}
 };
 
 export default (state = initialState, action) => {

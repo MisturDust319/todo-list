@@ -5,28 +5,24 @@ import { connect } from 'react-redux';
 
 // selectors
 import { idsSelector } from './selectors';
-
+// action dispatchers
+import { addItem } from './actions';
 // import App items
 import Item from './Item';
 
 const List = props => {
-  /*
-  if( props.items ) {
-    let items = this.props.items.map(id => {
-      return <Item id={id} />;
-    });
-
-    return (<ul>{items}</ul>);
-  } else {
-    return (<p>your list is empty</p>);
-  }
-  */
-  // return (<h1>What?</h1>);
-  let items = props.ids.map(itemId => {
+  // if there are items in the todo list,
+  // render it
+  if( props.ids.length !== 0 ) {
+    return props.ids.map(itemId => {
       return <Item key={itemId} id={itemId} />;
     });
+  } 
+  // otherwise, ask to create a new list
+  else {
 
-  return (<ul>{items}</ul>);
+    return (<button onClick={props.addItem}>Create List</button>);
+  }
 }
 
 List.propTypes = {
@@ -46,5 +42,5 @@ const mapStateToProps = state => {
   };
 }
 
-export default connect(mapStateToProps)(List);
+export default connect(mapStateToProps, { addItem })(List);
 
