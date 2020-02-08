@@ -1,0 +1,49 @@
+body {
+  background: #efdecd; }
+
+.App {
+  width: 100%;
+  font-family: "Fira Sans script=all rev=2";
+  font-size: 24px;
+  display: flex;
+  flex-direction: column; }
+  .App header {
+    background-color: #ED6737;
+    color: #fdfaf8;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column; }
+  .App article {
+    background-color: #fdfaf8;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px; }
+  .App footer {
+    background-color: #ED6737;
+    color: #fdfaf8;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column; }
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+  width: inherit;
+  padding-bottom: 10px; }
+
+input, button {
+  font-size: 24px;
+  background-color: #fdfaf8; }
+
+input[type='text'] {
+  width: 94%; }
+
+input[type='checkbox'] {
+  width: 4%; }
+
+:focus {
+  outline-color: #ED6737; }

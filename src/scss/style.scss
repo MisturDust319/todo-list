@@ -1,0 +1,98 @@
+$primary: #ED6737;
+$primary-light: lighten($primary, 40%);
+$primary-dark: darken($primary, 40%);
+$black: #111;
+$offwhite: #efdecd;
+$white: lighten($offwhite, 11%);
+
+$font: "Fira Sans script=all rev=2";
+
+$desktop: 375px;
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+body {
+	background: $offwhite;	
+}
+
+
+.App {
+	width: 100%;
+
+	// @include desktop {
+	// 	width: 45%;
+	// }
+	// typography
+	font-family: $font;
+	font-size: 24px;
+
+	display: flex;
+	flex-direction: column;
+
+	header {
+
+		background-color: $primary;
+		color: $white;
+
+		border-radius: 15px 15px 0px 0px;
+		
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	article {
+		background-color: $white;
+		
+		flex: auto;
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+
+		padding-top: 10px;
+	}
+
+	footer {
+		background-color: $primary;
+		color: $white;
+
+		border-radius: 15px 15px 0px 0px;
+		
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+
+li {
+	// made list items flex containers
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	font-size: 24px;
+	width: inherit;
+
+	padding-bottom: 10px;		
+}
+
+input, button {
+	font-size: 24px;
+	background-color: $white;
+}
+
+input[type='text'] {
+	width: 94%;
+}
+
+input[type='checkbox'] {
+	width: 4%;
+}
+
+:focus {
+	outline-color: $primary;
+}
