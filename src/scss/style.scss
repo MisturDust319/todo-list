@@ -1,20 +1,19 @@
-$primary: #ED6737;
-$primary-light: lighten($primary, 40%);
-$primary-dark: darken($primary, 40%);
-$black: #111;
-$offwhite: #efdecd;
-$white: lighten($offwhite, 11%);
+@use 'constants';
 
-$font: "Fira Sans script=all rev=2";
+@use 'colors';
+@use 'typography';
 
-$desktop: 375px;
+@use 'checkbox';
+
 @mixin desktop {
     @media (min-width: #{$desktop}) {
         @content;
     }
 }
 
+
 body {
+	font-size: 24px;
 	background: $offwhite;	
 }
 
@@ -27,7 +26,7 @@ body {
 	// }
 	// typography
 	font-family: $font;
-	font-size: 24px;
+	font-size: 1em;
 
 	display: flex;
 	flex-direction: column;
@@ -53,7 +52,7 @@ body {
 
 		width: 100%;
 
-		padding-top: 10px;
+		padding-top: $padding;
 	}
 
 	footer {
@@ -77,12 +76,19 @@ li {
 	font-size: 24px;
 	width: inherit;
 
-	padding-bottom: 10px;		
+	padding-bottom: $padding;		
 }
 
 input, button {
-	font-size: 24px;
+	font-size: 1em;
+	background-color: $primary;
+	color: $white;
+}
+
+input {
+	color: $black;
 	background-color: $white;
+	font-size: 1em;
 }
 
 input[type='text'] {
@@ -94,5 +100,5 @@ input[type='checkbox'] {
 }
 
 :focus {
-	outline-color: $primary;
+	outline-color: $accent;
 }

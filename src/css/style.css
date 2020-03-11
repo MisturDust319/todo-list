@@ -1,28 +1,30 @@
+@use 'checkbox';
 body {
-  background: #efdecd; }
+  font-size: 24px;
+  background: #f2e1c4; }
 
 .App {
   width: 100%;
   font-family: "Fira Sans script=all rev=2";
-  font-size: 24px;
+  font-size: 1em;
   display: flex;
   flex-direction: column; }
   .App header {
-    background-color: #ED6737;
-    color: #fdfaf8;
+    background-color: #da9e39;
+    color: #fcf8f2;
     border-radius: 15px 15px 0px 0px;
     display: flex;
     flex-direction: column; }
   .App article {
-    background-color: #fdfaf8;
+    background-color: #fcf8f2;
     flex: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 10px; }
+    padding-top: 0.41em; }
   .App footer {
-    background-color: #ED6737;
-    color: #fdfaf8;
+    background-color: #da9e39;
+    color: #fcf8f2;
     border-radius: 15px 15px 0px 0px;
     display: flex;
     flex-direction: column; }
@@ -33,11 +35,17 @@ li {
   align-items: center;
   font-size: 24px;
   width: inherit;
-  padding-bottom: 10px; }
+  padding-bottom: 0.41em; }
 
 input, button {
-  font-size: 24px;
-  background-color: #fdfaf8; }
+  font-size: 1em;
+  background-color: #da9e39;
+  color: #fcf8f2; }
+
+input {
+  color: #280a08;
+  background-color: #fcf8f2;
+  font-size: 1em; }
 
 input[type='text'] {
   width: 94%; }
@@ -46,4 +54,4 @@ input[type='checkbox'] {
   width: 4%; }
 
 :focus {
-  outline-color: #ED6737; }
+  outline-color: #f6d229; }
