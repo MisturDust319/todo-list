@@ -1,1 +1,9 @@
 // Checkbox styling
+
+.checkbox {
+	// hide the default checkbox
+	input[type="checkbox"] {
+		// using clip-path won't hide it from screen readers
+		clip-path: polygon(0 0);
+	}
+}

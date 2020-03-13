@@ -1,12 +1,10 @@
 @use 'constants';
-
 @use 'colors';
 @use 'typography';
-
 @use 'checkbox';
 
 @mixin desktop {
-    @media (min-width: #{$desktop}) {
+    @media (min-width: #{constants.$desktop}) {
         @content;
     }
 }
@@ -14,7 +12,7 @@
 
 body {
 	font-size: 24px;
-	background: $offwhite;	
+	background: colors.$offwhite;	
 }
 
 
@@ -25,7 +23,7 @@ body {
 	// 	width: 45%;
 	// }
 	// typography
-	font-family: $font;
+	font-family: typography.$font;
 	font-size: 1em;
 
 	display: flex;
@@ -33,8 +31,8 @@ body {
 
 	header {
 
-		background-color: $primary;
-		color: $white;
+		background-color: colors.$primary;
+		color: colors.$white;
 
 		border-radius: 15px 15px 0px 0px;
 		
@@ -44,7 +42,7 @@ body {
 	}
 
 	article {
-		background-color: $white;
+		background-color: colors.$white;
 		
 		flex: auto;
 		display: flex;
@@ -52,12 +50,12 @@ body {
 
 		width: 100%;
 
-		padding-top: $padding;
+		padding-top: typography.$padding;
 	}
 
 	footer {
-		background-color: $primary;
-		color: $white;
+		background-color: colors.$primary;
+		color: colors.$white;
 
 		border-radius: 15px 15px 0px 0px;
 		
@@ -76,18 +74,18 @@ li {
 	font-size: 24px;
 	width: inherit;
 
-	padding-bottom: $padding;		
+	padding-bottom: typography.$padding;		
 }
 
 input, button {
 	font-size: 1em;
-	background-color: $primary;
-	color: $white;
+	background-color: colors.$primary;
+	color: colors.$white;
 }
 
 input {
-	color: $black;
-	background-color: $white;
+	color: colors.$black;
+	background-color: colors.$white;
 	font-size: 1em;
 }
 
@@ -100,5 +98,5 @@ input[type='checkbox'] {
 }
 
 :focus {
-	outline-color: $accent;
+	outline-color: colors.$accent;
 }
