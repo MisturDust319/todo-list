@@ -33,3 +33,10 @@ packages/react-devtools-extensions/firefox/*.pem
 packages/react-devtools-extensions/shared/build
 packages/react-devtools-inline/dist
 packages/react-devtools-shell/dist
+
+# extra rules for sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+src/scss/*.css
