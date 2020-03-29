@@ -7,7 +7,7 @@ import { editItem } from './actions';
 import { itemTextSelector } from './selectors'
 
 const Item = props => {
-  return (<li key={props.id}>
+  return (<li key={props.id} className="item">
     <input type="checkbox" />
     <input type="text" value={props.text}
     onChange={e => props.editItem(props.id, e.target.value)}/>

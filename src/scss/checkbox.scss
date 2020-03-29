@@ -1,9 +1,86 @@
 // Checkbox styling
 
-.checkbox {
-	// hide the default checkbox
+/*
+needed variables:
+	--color-default -> checkbox-color: $grey;
+not needed vars:
+	--guter
+*/
+
+@use 'colors';
+
+
+$checkbox-border: 0.06em; // border-size-checkmark
+$checkbox-border-radius: 0.2em;
+$checkbox-size: 1em;
+
+$default-angle: 180deg;
+
+.item {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 0.3em .3em;
+	
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
 	input[type="checkbox"] {
-		// using clip-path won't hide it from screen readers
-		clip-path: polygon(0 0);
+		box-sizing: border-box;
+
+		display: inline-flex;
+	    cursor: pointer;
+	    position: relative;
+
+		height: $checkbox-size;
+		width: $checkbox-size;
+		
+		// hide the default checkbox
+		background-color: colors.$white;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+
+		background-color: colors.$grey;
+		// border-radius: $checkbox-border-radius;
+		outline: none;
+		
+		transition-duration: 0.1s;
+		background-color: colors.$grey;
+
+		&:after {
+			color: colors.$primary;
+			padding: 0.5rem 0.25rem;
+		}
+
+		&:checked {
+			border: none;
+			background-color: colors.$primary;
+
+			&:after {
+				content: '\2713';
+				font-size: 0.8em;
+				color: colors.$white;
+				position: relative;
+				bottom: 0.52em;
+				text-align: center;
+
+			}
+
+			& + input {
+				text-decoration: line-through;
+			}
+		}
 	}
+
+	input[type="text"] {
+		box-sizing: border-box;
+		width: 90%;
+		margin-left: .5em;
+		padding-left: 0.45em;
+	}
+
+	
 }

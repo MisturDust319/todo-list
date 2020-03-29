@@ -1,7 +1,7 @@
+@use 'checkbox';
 @use 'constants';
 @use 'colors';
 @use 'typography';
-@use 'checkbox';
 
 @mixin desktop {
     @media (min-width: #{constants.$desktop}) {
@@ -12,7 +12,8 @@
 
 body {
 	font-size: 24px;
-	background: colors.$offwhite;	
+	background: colors.$offwhite;
+	font-family: typography.$font;
 }
 
 
@@ -23,7 +24,6 @@ body {
 	// 	width: 45%;
 	// }
 	// typography
-	font-family: typography.$font;
 	font-size: 1em;
 
 	display: flex;
@@ -65,17 +65,17 @@ body {
 	
 }
 
-li {
-	// made list items flex containers
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+// li {
+// 	// made list items flex containers
+// 	display: flex;
+// 	flex-direction: row;
+// 	align-items: center;
 
-	font-size: 24px;
-	width: inherit;
+// 	font-size: 24px;
+// 	width: inherit;
 
-	padding-bottom: typography.$padding;		
-}
+// 	padding-bottom: typography.$padding;		
+// }
 
 input, button {
 	font-size: 1em;
@@ -87,14 +87,6 @@ input {
 	color: colors.$black;
 	background-color: colors.$white;
 	font-size: 1em;
-}
-
-input[type='text'] {
-	width: 94%;
-}
-
-input[type='checkbox'] {
-	width: 4%;
 }
 
 :focus {
