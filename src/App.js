@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import { connect } from 'react-redux';
 
@@ -8,15 +7,14 @@ import './App.css';
 
 import Item from './Item';
 import List from './List';
+import Head from './Head';
 
 import { addItem } from './actions';
 
 function App(props) {
 	return (
 		<div className="App">
-			<Helmet>
-				<title>todo list</title>
-			</Helmet>
+			<Head/>
 			<header>
 				<h1>to-do list</h1>
 			</header>
