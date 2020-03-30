@@ -32,12 +32,12 @@ not needed vars:
   background-color: #E0E0E0;
 }
 .item input[type=checkbox]:after {
-  color: #da9e39;
+  color: #F5801B;
   padding: 0.5rem 0.25rem;
 }
 .item input[type=checkbox]:checked {
   border: none;
-  background-color: #da9e39;
+  background-color: #F5801B;
 }
 .item input[type=checkbox]:checked:after {
   content: "✓";
