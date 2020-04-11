@@ -1,12 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import { connect } from 'react-redux';
 
-import logo from './logo.svg';
-import './App.css';
-
-import Item from './Item';
 import List from './List';
 import Head from './Head';
 

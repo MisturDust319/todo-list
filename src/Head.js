@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 const title = "to-do list";
 
 export default () => {
-	return <Helmet>
+	return <Helmet>	 
 		<title>{ title }</title>
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:creator" content="@hermetikosmedia" />
