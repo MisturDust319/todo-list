@@ -52,6 +52,7 @@
     "sass": "^1.26.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "win-node-env": "^0.4.0"
   }
 }
